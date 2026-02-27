@@ -1,1 +1,111 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>About Us - Surf Co.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(to bottom, #e0f7fa, #ffffff);
+            min-height: 100vh;
+        }
+
+        /* Logo oben links */
+        .logo {
+            position: fixed;
+            top: 20px;
+            left: 30px;
+            font-size: 28px;
+            font-weight: bold;
+            z-index: 2;
+        }
+
+        .logo a {
+            color: black;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .logo a:hover {
+            color: #00bcd4;
+        }
+
+        /* Hauptbereich */
+        .container {
+            max-width: 900px;
+            margin: 120px auto 60px auto;
+            padding: 40px;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+        p {
+            line-height: 1.7;
+            margin-bottom: 20px;
+            color: #444;
+            font-size: 18px;
+        }
+
+        .about-image {
+            width: 100%;
+            margin-top: 20px;
+            border-radius: 15px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                margin: 100px 20px 40px 20px;
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Klickbares Logo -->
+    <div class="logo">
+        <a href="index.html">SURF CO.</a>
+    </div>
+
+    <div class="container">
+        <h1>About Us</h1>
+
+        <p>
+            SURF CO. wurde aus purer Leidenschaft für das Meer gegründet. 
+            Was als kleine Idee unter Freunden begann, ist heute eine Marke 
+            für alle, die Freiheit, Wellen und Abenteuer lieben.
+        </p>
+
+        <p>
+            Unser Ziel ist es, hochwertige Surfprodukte anzubieten, 
+            die Performance und Style verbinden. Egal ob Anfänger oder 
+            erfahrener Surfer – wir wollen, dass jeder die perfekte Welle findet.
+        </p>
+
+        <p>
+            Nachhaltigkeit liegt uns besonders am Herzen. Deshalb achten 
+            wir auf langlebige Materialien und verantwortungsvolle Produktion.
+        </p>
+
+        <!-- Optional: Bild einfügen -->
+        <img src="images/about-surf.jpg" alt="Team am Strand" class="about-image">
+    </div>
+
+</body>
+</html>
