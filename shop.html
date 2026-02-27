@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Surf Shop - Produkte</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background: #f0f8ff; /* hellblauer Hintergrund */
+            min-height: 100vh;
+        }
+
+        /* Logo oben links */
+        .logo {
+            position: fixed;
+            top: 20px;
+            left: 30px;
+            font-size: 28px;
+            font-weight: bold;
+            z-index: 2;
+        }
+
+        .logo a {
+            color: black;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .logo a:hover {
+            color: #00bcd4;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 80px;
+            margin-bottom: 40px;
+            color: #333;
+        }
+
+        /* Produkt-Grid */
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 30px;
+            padding: 0 50px 50px 50px;
+        }
+
+        .product {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: transform 0.3s;
+            text-align: center;
+        }
+
+        .product:hover {
+            transform: translateY(-5px);
+        }
+
+        .product img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .product-info {
+            padding: 15px;
+        }
+
+        .product-info h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .product-info p {
+            font-size: 16px;
+            color: #00bcd4;
+            font-weight: bold;
+        }
+
+        @media (max-width: 768px) {
+            .products {
+                padding: 0 20px 20px 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Klickbares Logo oben links -->
+    <div class="logo">
+        <a href="index.html">SURF CO.</a>
+    </div>
+
+    <h1>Unsere Produkte</h1>
+
+    <div class="products">
+        <!-- Beispielprodukt 1 -->
+        <div class="product">
+            <img src="surfboard1.jpg" alt="Surfboard Classic">
+            <div class="product-info">
+                <h3>Surfboard Classic</h3>
+                <p>€299</p>
+            </div>
+        </div>
+
+        <!-- Beispielprodukt 2 -->
+        <div class="product">
+            <img src="wetsuit1.jpg" alt="Neoprenanzug Pro">
+            <div class="product-info">
+                <h3>Neoprenanzug Pro</h3>
+                <p>€199</p>
+            </div>
+        </div>
+
+        <!-- Beispielprodukt 3 -->
+        <div class="product">
+            <img src="surfboard2.jpg" alt="Surfboard Speed">
+            <div class="product-info">
+                <h3>Surfboard Speed</h3>
+                <p>€349</p>
+            </div>
+        </div>
+
+        <!-- Du kannst hier weitere Produkte hinzufügen -->
+    </div>
+
+</body>
+</html>
