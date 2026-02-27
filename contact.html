@@ -1,1 +1,128 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact - Nextwave</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- holy Font  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(to bottom, #e0f7fa, #ffffff);
+            min-height: 100vh;
+        }
+
+        /* Logo */
+        .logo {
+            position: fixed;
+            top: 20px;
+            left: 30px;
+            font-size: 28px;
+            font-weight: bold;
+            z-index: 2;
+        }
+
+        .logo a {
+            color: black;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .logo a:hover {
+            color: #00bcd4;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 140px auto 60px auto;
+            text-align: center;
+            padding: 40px;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        p {
+            margin-bottom: 40px;
+            color: #555;
+            font-size: 18px;
+        }
+
+        .socials {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            font-size: 40px;
+        }
+
+        .socials a {
+            color: black;
+            transition: 0.3s;
+        }
+
+        .socials a:hover {
+            color: #00bcd4;
+            transform: scale(1.2);
+        }
+
+        @media (max-width: 768px) {
+            .socials {
+                gap: 25px;
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Klickbares Logo -->
+    <div class="logo">
+        <a href="index.html">Nextwave</a>
+    </div>
+
+    <div class="container">
+        <h1>Contact</h1>
+        <p>
+            Follow us on social media and stay connected with the latest waves,
+            new products and surf adventures.
+        </p>
+
+        <div class="socials">
+            <!-- TikTok -->
+            <a href="https://www.tiktok.com" target="_blank">
+                <i class="fab fa-tiktok"></i>
+            </a>
+
+            <!-- Instagram -->
+            <a href="https://www.instagram.com" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+
+            <!-- YouTube -->
+            <a href="https://www.youtube.com" target="_blank">
+                <i class="fab fa-youtube"></i>
+            </a>
+
+            <!-- Email Icon (macht nichts) -->
+            <a href="#">
+                <i class="fas fa-envelope"></i>
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
