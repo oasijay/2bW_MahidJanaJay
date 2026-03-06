@@ -57,9 +57,32 @@
         }
 
         .logo a:hover {
-            color: white; /* Hoverding-Farbe */
+            color: gray; /* Hoverding-Farbe */
         }
 
+
+        /* Forms */
+        .form {
+            position: absolute;
+            top: -20px;
+            right: 30px; /* unte Rechts */
+            font-size: 12px;
+            font-weight: bold;
+            z-index: 2;
+        }
+
+        .form a {
+            color: white;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .form a:hover {
+            color: #00bcd4; /* Hoverding-Farbe */
+        }
+
+
+        
         /* zentriert */
         .content {
             position: relative;
@@ -93,25 +116,12 @@
             font-weight: bold;
         }
         
-        .buttons b {
-            text-decoration: none;
-            padding: 12px 27px;
-            font-size: 15px;
-            border-radius: 32px;
-            background: white;
-            color: black;
-            transition: 0.3s;
-            font-weight: bold;
-        }
-        
+
         .buttons a:hover {
             background: #00bcd4;
             color: white;
         }
-        .buttons b:hover {
-            background: #00bcd4;
-            color: white;
-        }
+
         
         @media (max-width: 768px) {
             .content h1 {
@@ -135,6 +145,11 @@
     <div class="overlay"></div>
 
     <!-- Clickbares Logo oben links -->
+    <div class="logo">
+        <a href="index.html">Nextwave</a>
+    </div>
+
+    <!-- Forms Knopf-->
     <div class="logo">
         <a href="index.html">Nextwave</a>
     </div>
