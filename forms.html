@@ -1,14 +1,72 @@
 <!DOCTYPE html>
 <html>
 <body>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<h2>Text input fields</h2>
+<title>Contact - Surf Co.</title>
+  
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+
+form{
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+
+h2{
+text-align:center;
+margin-bottom:30px;
+}
+
+.logo{
+position:fixed;
+top:20px;
+left:30px;
+font-size:28px;
+font-weight:bold;
+}
+
+.logo a{
+text-decoration:none;
+color:black;
+}
+
+.logo a:hover{
+color:#00bcd4;
+}
+
+.container{
+max-width:600px;
+margin:140px auto;
+background:white;
+padding:40px;
+border-radius:20px;
+box-shadow:0 8px 25px rgba(0,0,0,0.1);
+}
+
+
+</style>
 
 <form>
-  <label for="fname">First name:</label><br>
-  <input type="text" id="fname" name="fname" value="John"><br>
-  <label for="lname">Last name:</label><br>
-  <input type="text" id="lname" name="lname" value="Doe">
+
+<label for="fname">First name</label>
+<input type="text" id="fname" name="fname" placeholder="Your first name">
+<label for="lname">Last name</label>
+<input type="text" id="lname" name="lname" placeholder="Your last name">
+<button type="submit">Send</button>
+
 </form>
 
 
